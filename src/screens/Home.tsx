@@ -1,0 +1,10 @@
+import { MapView } from "../components"
+
+export const Home = () => {
+    return (
+        <>
+            <div>Home</div>
+            <MapView />
+        </>
+    )
+}

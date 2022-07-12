@@ -1,6 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
+import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuemFsZXRhIiwiYSI6ImNsNWgza3U1YzA1bW8zY25mdDFwZzlxeXAifQ.jpQiJmVEiXnYaFw9kn8ipw';
+
+if (!navigator.geolocation) {
+  alert('Your navigator doesn\'\t have Geolocation');
+}
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
